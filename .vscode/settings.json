@@ -1,0 +1,14 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "cSpell.words": [
+    "asynciterable",
+    "deno",
+    "palt",
+    "preact",
+    "twind"
+  ],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true
+}

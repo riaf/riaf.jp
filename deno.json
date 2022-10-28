@@ -1,0 +1,21 @@
+{
+  "tasks": {
+    "start": "deno run -A --watch=static/,routes/ dev.ts"
+  },
+  "lint": {
+    "files": {
+      "include": [
+        "components/",
+        "islands/",
+        "routes/",
+        "main.ts",
+        "twind.config.ts"
+      ]
+    }
+  },
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}
