@@ -13,7 +13,7 @@ export function Entry(props: Props) {
   return (
     <article class="mb-20">
       <h3
-        class="text-4xl font-bold hover:text-primary transition-colors delay-150 duration-300"
+        class="text-3xl md:text-4xl font-bold hover:text-primary transition-colors delay-150 duration-300"
         style={{ fontFeatureSettings: `"palt"` }}
       >
         <a href={url} target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ export function Entry(props: Props) {
         <Domain url={url} />
       </div>
       <p
-        class="text-2xl leading-relaxed hover:text-primary transition-colors delay-150 duration-300"
+        class="text-xl md:text-2xl text-ellipsis overflow-hidden leading-relaxed hover:text-primary transition-colors delay-150 duration-300"
         style={{ fontFeatureSettings: `"palt"` }}
       >
         <a href={url} target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@ function Domain(props: { url: string }) {
 function entryDescription(entry: FeedEntry) {
   const desc = stripTag(entry.content?.value || entry.description?.value);
 
-  return desc?.slice(0, 200).replace(/[\s…]+$/, "") + "…";
+  return desc?.slice(0, 140).replace(/[\s…]+$/, "") + "…";
 }
 
 function stripTag(str?: string) {
