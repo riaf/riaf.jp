@@ -41,6 +41,20 @@ export default function Home({ data }: PageProps<{ entries: FeedEntry[] }>) {
     <>
       <Head>
         <title>Keisuke SATO | 佐藤佳祐 | riaf.jp</title>
+        <meta name="title" content="Keisuke SATO | 佐藤佳祐 | riaf.jp" />
+        <meta name="description" content="佐藤佳祐 / riaf のアウトプットをまとめているページです。ITサービスを開発したり、相談に乗ったりしています。" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://riaf.jp/" />
+        <meta property="og:title" content="Keisuke SATO | 佐藤佳祐 | riaf.jp" />
+        <meta property="og:description" content="佐藤佳祐 / riaf のアウトプットをまとめているページです。ITサービスを開発したり、相談に乗ったりしています。" />
+        <meta property="og:image" content="https://imagedelivery.net/-RiWa6tLJfhefZ_kr71maA/7b4ac137-931e-42cc-40f7-4ac651287000/header" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://riaf.jp/" />
+        <meta property="twitter:title" content="Keisuke SATO | 佐藤佳祐 | riaf.jp" />
+        <meta property="twitter:description" content="佐藤佳祐 / riaf のアウトプットをまとめているページです。ITサービスを開発したり、相談に乗ったりしています。" />
+        <meta property="twitter:image" content="https://imagedelivery.net/-RiWa6tLJfhefZ_kr71maA/7b4ac137-931e-42cc-40f7-4ac651287000/header" />
         <style>
           {`
           body { background: #f7f7f7; }
@@ -55,7 +69,7 @@ export default function Home({ data }: PageProps<{ entries: FeedEntry[] }>) {
             alt="profile picture"
           />
           <h1 class="mt-6 text-2xl">
-            佐藤 佳祐
+            佐藤 佳祐 <span class="text-gray-400">aka</span> riaf
           </h1>
           <p class="mb-8 text-sm text-gray-400">From Kushiro, Hokkaido.</p>
           <div class="flex flex-row">

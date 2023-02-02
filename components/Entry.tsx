@@ -44,7 +44,7 @@ function Domain(props: { url: string }) {
 function entryDescription(entry: FeedEntry) {
   const desc = stripTag(entry.content?.value || entry.description?.value);
 
-  return desc?.slice(0, 140).replace(/[\s…]+$/, "") + "…";
+  return desc?.slice(0, 180).replace(/[\s…]+$/, "") + "…";
 }
 
 function stripTag(str?: string) {
