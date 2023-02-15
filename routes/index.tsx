@@ -104,9 +104,8 @@ export default function Home({ data }: PageProps<{ entries: FeedEntry[] }>) {
             </a>
             <a
               class="m-2 p-2 bg-gray-200 rounded-full hover:bg-white transition-colors delay-150 duration-300"
-              href="https://riaf.medium.com/"
+              href="https://musings.riaf.jp"
               target="_blank"
-              rel="noopener noreferrer"
             >
               <img alt="Medium" src="/medium.svg" width="28" height="28" />
             </a>
